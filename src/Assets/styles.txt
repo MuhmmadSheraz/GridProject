@@ -1,0 +1,21 @@
+font family : JACKPORT REGULAR NCV
+
+header college kids text
+color: #81212D;
+
+header mint button
+box-shadow: 4px 4px 0px #000000;
+
+road map div
+
+border: 2px solid #000000;
+box-shadow: -4px -4px 0px 1px #000000;
+border-radius: 24px;
+
+
+footer mint button
+
+border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: -4px 4px 0px #000000;
+border-radius: 8px;
