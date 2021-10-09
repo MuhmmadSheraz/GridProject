@@ -4,8 +4,7 @@ import logoMark from "../../Assets/Logomark-Blue 1.png";
 import discord from "../../Assets/discord.png";
 import twitter from "../../Assets/twitter.png";
 import "./style.css";
-const Navbar = () => {
-  const [showNav, setShowNav] = useState(false);
+const Navbar = ({ showSidebar, setShowSidebar }) => {
   return (
     <div className="container w-100">
       <nav className="navbar navbar-expand-lg justify-content-between navbar-light bg-transparent">
@@ -17,13 +16,15 @@ const Navbar = () => {
           className="navbar-toggler"
           type="button"
           aria-label="Toggle navigation"
-          onClick={() => setShowNav(!showNav)}
+          onClick={() => {
+            setShowSidebar(!showSidebar);
+          }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         <div
-          style={{ display: showNav ? "flex" : "none" }}
+          style={{ display: "none" }}
           className="navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
