@@ -1,8 +1,8 @@
 .card_wrapper {
-  flex-direction: row;
+  flex-direction: row !important;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
   .card_wrapper {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 }

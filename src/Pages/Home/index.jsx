@@ -15,7 +15,7 @@ import "./style.css";
 import About from "../../Components/About/index";
 function Home() {
   return (
-    <div className="container sub_home_wrapper pb-3 d-flex justify-content-center align-items-center flex-column pt-5">
+    <div className="container  sub_home_wrapper pb-3 d-flex justify-content-center align-items-center flex-column pt-5">
       <div className="row no-gutters justify-content-center  w-100">
         {/* Text */}
         <div className="col-md-6 center padding-0 ">
@@ -81,7 +81,7 @@ function Home() {
                   <p className="date">November 2021</p>
                 </div>
                 <div className="box-2 p-2 w-full">
-                  <h4>More collegekids announcements coming soon</h4>
+                  <h5>More collegekids announcements coming soon</h5>
                   <div className=" flex-row justify-content-around ">
                     <img src={logo} alt="" />
                     <img src={logo} alt="" />
@@ -97,7 +97,7 @@ function Home() {
           </div>
         </div>
         {/* Images */}
-        <div className="col-md-6 padding-0   ">
+        <div className="col-md-6 padding-0  text-center ">
           {Array(7)
             .fill()
             .map((x) => {

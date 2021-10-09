@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../Card/index";
 import Image1 from "../../Assets/im1.png";
 import Image6 from "../../Assets/img6.png";
+import "./style.css";
 const About = () => {
   return (
     <div>

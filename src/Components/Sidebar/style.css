@@ -1,5 +1,5 @@
 .sidebar_wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   min-height: 100vh;
   width: 20vw;
@@ -8,8 +8,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f1eded;
 }
-
+.space_l {
+  margin-right: 10px;
+}
+.sidebar_logo_wrapper {
+  position: absolute;
+  top: 5%;
+}
 @media screen and (max-width: 768px) {
   .sidebar_wrapper {
     width: 40vw;

@@ -10,7 +10,7 @@ const index = () => {
     <div className="d-flex justify-content-center align-items-center mt-5 flex-column pb-2">
       <hr className="footer_separator" />
       <img src={Image2} className="footerImage" />
-      <h1>START MINNG NOW</h1>
+      <h1 className="mt-2">START MINNG NOW</h1>
       <button className="footer_button  mt-3 ">MINT</button>
       <div className="d-flex align-items-center mt-3 ">
         <img src={logoMark} alt="" className="mx-3" />

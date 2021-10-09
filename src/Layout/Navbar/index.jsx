@@ -6,7 +6,7 @@ import twitter from "../../Assets/twitter.png";
 import "./style.css";
 const Navbar = ({ showSidebar, setShowSidebar }) => {
   return (
-    <div className="container w-100">
+    <div className="container w-100 px-3">
       <nav className="navbar navbar-expand-lg justify-content-between navbar-light bg-transparent">
         <div className="d-flex align-items-center">
           <img src={logo} className="h-50 w-50 " />

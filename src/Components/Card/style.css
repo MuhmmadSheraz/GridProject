@@ -1,3 +1,11 @@
 .about-content {
   font-family: sans-serif;
 }
+.card_image {
+  width: 250px;
+}
+@media screen and (max-width: 768px) {
+  .card_image {
+    width: 300px !important;
+  }
+}

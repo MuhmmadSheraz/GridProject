@@ -5,17 +5,13 @@
 }
 body {
   font-family: "JACKPORT" !important;
-
-  overflow-x: hidden;
+  width: 100% !important;
 }
 
 @media screen and (max-width: 992px) {
   .header_heading {
     font-size: 70px;
     color: black;
-  }
-  .sub_home_wrapper {
-    padding: 0 !important;
   }
 }
 @media screen and (max-width: 768px) {

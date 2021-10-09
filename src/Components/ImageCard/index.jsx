@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./style.css";
 const index = ({ image1, image2 }) => {
   return (
     <div className="row no-gutters justify-content-center  ">

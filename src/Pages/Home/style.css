@@ -1,5 +1,5 @@
 .main-wrapper {
-  width: 100vw;
+  width: 100%;
   background-image: url("../../Assets/bg.png");
 }
 .list-unstyle {
@@ -64,6 +64,11 @@
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 991px) {
+  .row-card-content {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 768px) {
   .image_height {
     margin-bottom: 11px;
@@ -71,5 +76,8 @@
     width: 300px !important;
     background-size: cover;
     background-position: center;
+  }
+  .row-card-content {
+    font-size: 18px;
   }
 }
