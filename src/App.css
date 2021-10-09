@@ -7,16 +7,6 @@ body {
   font-family: "JACKPORT" !important;
   width: 100% !important;
 }
-
-@media screen and (max-width: 992px) {
-  .header_heading {
-    font-size: 70px;
-    color: black;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header_heading {
-    font-size: 50px;
-    color: black;
-  }
+.upadteIcon {
+  height: 25px !important;
 }

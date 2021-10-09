@@ -1,26 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../../Assets/logo.png";
 import logoMark from "../../Assets/Logomark-Blue 1.png";
 import discord from "../../Assets/discord.png";
 import twitter from "../../Assets/twitter.png";
+import close from "../../Assets/close.png";
 import "./style.css";
 const Navbar = ({ showSidebar, setShowSidebar }) => {
   return (
-    <div className="container w-100 px-3">
+    <div className="container w-100 px-3 mt-2" style={{ paddingTop: "25px" }}>
       <nav className="navbar navbar-expand-lg justify-content-between navbar-light bg-transparent">
         <div className="d-flex align-items-center">
-          <img src={logo} className="h-50 w-50 " />
+          <img
+            src={logo}
+            className="h-50 w-50 "
+            style={{ marginRight: "5px" }}
+            alt="logo"
+          />
           <h3 className="logoText">CollegeKids</h3>
         </div>
         <button
           className="navbar-toggler"
           type="button"
+          style={{ boxShadow: "none" }}
           aria-label="Toggle navigation"
           onClick={() => {
             setShowSidebar(!showSidebar);
           }}
         >
-          <span className="navbar-toggler-icon"></span>
+          {showSidebar ? (
+            <img src={close} className="closeIcon" alt="icon" />
+          ) : (
+            <span
+              className="navbar-toggler-icon "
+              style={{ boxShadow: "none", border: 0 }}
+            ></span>
+          )}
         </button>
 
         <div
@@ -33,13 +47,13 @@ const Navbar = ({ showSidebar, setShowSidebar }) => {
             <li className="list-unstyle px-2  nav_item ">ROADMAP</li>
             <li className="list-unstyle px-2  nav_item">ABOUT</li>
             <li className="list-unstyle px-2">
-              <img src={logoMark} className="h-25" />
+              <img src={logoMark} className="h-25" alt="icon" />
             </li>
             <li className="list-unstyle px-2">
-              <img src={discord} className="h-25" />
+              <img src={discord} className="h-25" alt="icon" />
             </li>
             <li className="list-unstyle px-2">
-              <img src={twitter} className="h-25" />
+              <img src={twitter} className="h-25" alt="icon" />
             </li>
 
             <li className="list-unstyle px-2">

@@ -1,7 +1,10 @@
 .card_wrapper {
   flex-direction: row !important;
 }
-@media screen and (max-width: 991px) {
+.font-bold {
+  font-weight: bold !important;
+}
+@media screen and (max-width: 768px) {
   .card_wrapper {
     flex-direction: column !important;
   }
