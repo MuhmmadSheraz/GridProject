@@ -3,7 +3,7 @@
   /* max-width: 500px; */
 }
 .footer_separator {
-  width: 70%;
+  width: 83%;
   height: 1px !important;
   border: 1px solid #000 !important;
   border-top-width: 1px;
@@ -15,9 +15,54 @@
   background-color: white;
   font-weight: bold;
 }
+.linkBtn {
+  text-decoration: none;
+  color: white;
+}
+.linkBtn:hover {
+  color: #ffff8f !important;
+}
+.footerLine {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background: #202020;
+  color: white;
+}
+@media screen and (max-width: 1235px) {
+  .footer_separator {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .footer_separator {
+    width: 900px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer_separator {
+    width: 680px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer_separator {
+    width: 500px !important;
+  }
+}
 @media screen and (max-width: 600px) {
   .footerImage {
     height: 400px !important;
+  }
+  .footer_separator {
+    width: 500px !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .footerImage {
+    height: 300px !important;
+  }
+  .footer_separator {
+    width: 320px !important;
   }
 }
 @media screen and (max-width: 400px) {

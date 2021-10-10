@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div>
       <Fade top duration={1000} delay={1200}>
-        <h1 className="display-2 ">ABOUT</h1>
+        <h1 className="display-2  alignText">ABOUT</h1>
       </Fade>
       <Fade bottom duration={1000} delay={1200}>
         <h5 className="about-content">

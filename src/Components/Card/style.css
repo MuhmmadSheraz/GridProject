@@ -1,5 +1,12 @@
 .about-content {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 500;
+}
+.card_description {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 600;
 }
 .card_image {
   width: 250px;

@@ -25,20 +25,16 @@
   height: 1px !important;
   border: 1px solid #000 !important;
   border-top-width: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.image_height {
-  margin-bottom: 11px;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  transition: 0.2s ease-out;
+.alignText {
+  text-align: left !important;
+  align-self: s;
 }
-.image_height:hover {
-  cursor: pointer;
-  transform: scale(1.03) !important;
-}
+
 .box {
-  padding-bottom: 10px;
   border: 2px solid #000000;
   box-shadow: -4px -4px 0px 1px #000000;
   border-radius: 24px;
@@ -47,11 +43,14 @@
   position: relative;
   margin-top: 10px !important;
   text-align: center;
-  padding: 5px;
   margin-bottom: 25px !important;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 .box-2 {
+  padding-top: 20px;
   padding-bottom: 10px;
+
   margin-top: 25px !important;
   border: 2px solid #000000;
   box-shadow: -4px -4px 0px 1px #000000;
@@ -65,17 +64,24 @@
   font-size: 22px;
 }
 .header_content {
-  font-family: sans-serif !important;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif !important;
+  color: black;
+  font-weight: 700 !important;
 }
 .date {
   margin-top: 10px;
   text-align: left;
-  color: "#A9A9A9";
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: bold;
+  padding: 0px 15px;
+
   /* position: absolute;
   bottom: 0; */
 }
 .row-card-content {
+  padding: 0px 15px;
   text-align: left;
   font-size: 30px;
   margin-bottom: 25px;
@@ -84,10 +90,6 @@
   padding-right: 12px !important;
 }
 @media screen and (max-width: 1199px) {
-  .image_height {
-    height: 250px !important;
-    width: 250px;
-  }
   .header_heading {
     font-size: 80px;
     color: black;
@@ -104,12 +106,29 @@
   .row-card-content {
     font-size: 18px;
   }
-  .image_height {
-    height: 190px !important;
-    width: 230px;
-  }
+}
+.headerButton {
+  padding: 6px 24px !important;
+  box-shadow: 4px 4px 0px #000000;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 24px;
 }
 @media screen and (max-width: 767px) {
+  .mb_0 {
+    margin-bottom: 0px !important;
+  }
+  .alignText {
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+  }
+  .small_font {
+    font-size: 18px !important;
+  }
   .leftSideRow_wrapper {
     padding: 0px !important;
   }
@@ -117,10 +136,7 @@
     font-size: 50px;
     color: black;
   }
-  .image_height {
-    height: 300px !important;
-    width: 300px !important;
-  }
+
   .row-card-content {
     font-size: 23px;
   }

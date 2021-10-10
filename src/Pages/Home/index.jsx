@@ -50,24 +50,28 @@ function Home() {
     <div className="container  sub_home_wrapper pb-3 d-flex justify-content-center align-items-center flex-column pt-5">
       <div className="row no-gutters justify-content-center  w-100">
         {/* Text */}
-        <div className="col-md-6 center padding-0 ">
+        <div className="col-md-6 center padding-0 alignText">
           <h1 className="header_heading">WELCOME TO COLLEGE KIDS</h1>
-          <h3 className="pt-3 header_content">
+          <p className="pt-3 header_content">
             A collection of 10,000 CollegeKids transported into the Metaverse, a
             place where they can become anything they want
-          </h3>
-          <button className="nav-button align-self-start mt-3 ">MINT</button>
-          <hr className="hr_custom my-4" />
-          <div className=" align-self-start">
-            <h3>STAY UP TO DATE!</h3>
-            <img alt="icon" src={logoMark} className="upadteIcon mx-1" />
-            <img alt="icon" src={discord} className="upadteIcon mx-1" />
-            <img alt="icon" src={twitter} className="upadteIcon mx-1" />
+          </p>
+          <div>
+            <button className="headerButton justify-content-center align-items-center mt-3 text-center">
+              MINT
+            </button>
           </div>
-          <hr className="hr_custom my-4" />
+          <hr className="hr_custom alignText my-4" />
+          <div className="alignText">
+            <h3 className="mb-3">STAY UP TO DATE!</h3>
+            <img alt="icon" src={logoMark} className="upadteIcon mx-3" />
+            <img alt="icon" src={discord} className="upadteIcon mx-3" />
+            <img alt="icon" src={twitter} className="upadteIcon mx-3" />
+          </div>
+          <hr className="hr_custom  alignText my-4" />
           {/* Section 2 */}
-          <section className="my-2">
-            <h1 className="display-2 ">ROADMAP</h1>
+          <section className="mb-2 mt-5">
+            <h1 className="display-2 alignText mt-3 mb-5">ROADMAP</h1>
             <div className="row w-full m-0 ">
               <div className="col-md-6 py-0  leftSideRow_wrapper">
                 <div className="box  w-full">
@@ -76,15 +80,15 @@ function Home() {
                   </h4>
                   <p className="date">October 2021</p>
                 </div>
-                <div className="box p-2 w-full">
+                <div className="box  w-full">
                   <h4 className="row-card-content">
                     DAO to be established , allowing for community based voting
                     and decision making to holders.
                   </h4>
                   <p className="date">October 2021</p>
                 </div>
-                <div className="box p-2 w-full">
-                  <h4 className="row-card-content">
+                <div className="box  w-full mb_0">
+                  <h4 className="row-card-content ">
                     Create breeding system to create scarcity in the original
                     collection and release new collection of babies available
                     only though breeding
@@ -93,27 +97,29 @@ function Home() {
                 </div>
               </div>
               <div className="col-md-6 p-0">
-                <div className="box-2 p-2 w-full">
+                <div className="box-2  w-full">
                   <h4 className="row-card-content row_card_heading">
                     Discord giveaways to be announced.
                   </h4>
                   <p className="date">October 2021</p>
                 </div>
-                <div className="box-2 p-2 w-full">
+                <div className="box-2  w-full">
                   <h4 className="row-card-content">
                     Launch initial 10,000 CollegeKids
                   </h4>
                   <p className="date">October 2021</p>
                 </div>
-                <div className="box-2 p-2 w-full">
+                <div className="box-2  w-full">
                   <h4 className="row-card-content">
                     Smart contracts will be deployed, allowing for staking and
                     liquidity pools to yield $DiningDollars
                   </h4>
                   <p className="date">November 2021</p>
                 </div>
-                <div className="box-2 p-2 w-full">
-                  <h4>More collegekids announcements coming soon</h4>
+                <div className="box-2 p-3 px-3 w-full row-card-content small_font text-center">
+                  <p className="small_font">
+                    More collegekids Announcement coming soon
+                  </p>
                   <div className=" flex-row justify-content-around ">
                     <img src={logo} alt="" />
                     <img src={logo} alt="" />
@@ -129,10 +135,10 @@ function Home() {
           </div>
         </div>
         {/* Images */}
-        <div className="col-md-6 padding-0  text-center ">
+        <div className="col-md-6 padding-0  text-center overflow-hidden">
           {imageData.map(({ img }, index) => {
             return (
-              <Fade key={index} right duration={1000} delay={1200}>
+              <Fade key={index} right duration={500} delay={500}>
                 <ImageCard image1={img[0]} image2={img[1]} />
               </Fade>
             );

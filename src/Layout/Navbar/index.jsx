@@ -46,13 +46,13 @@ const Navbar = ({ showSidebar, setShowSidebar }) => {
             <li className="list-unstyle px-2 nav_item">HOME</li>
             <li className="list-unstyle px-2  nav_item ">ROADMAP</li>
             <li className="list-unstyle px-2  nav_item">ABOUT</li>
-            <li className="list-unstyle px-2">
+            <li className="list-unstyle px-2 nav_item">
               <img src={logoMark} className="h-25" alt="icon" />
             </li>
-            <li className="list-unstyle px-2">
+            <li className="list-unstyle px-2 nav_item">
               <img src={discord} className="h-25" alt="icon" />
             </li>
-            <li className="list-unstyle px-2">
+            <li className="list-unstyle px-2 nav_item">
               <img src={twitter} className="h-25" alt="icon" />
             </li>
 

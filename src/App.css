@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap");
 @font-face {
   font-family: "JACKPORT";
   src: local("JACKPORT"), url("./Assets/Fonts/JACKPORT.ttf") format("truetype");
   font-weight: normal;
 }
 body {
-  font-family: "JACKPORT" !important;
+  font-family: "JACKPORT", "Montserrat" !important;
   width: 100% !important;
 }
 .upadteIcon {

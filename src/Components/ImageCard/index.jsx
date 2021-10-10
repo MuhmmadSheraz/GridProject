@@ -2,12 +2,12 @@ import React from "react";
 import "./style.css";
 const index = ({ image1, image2 }) => {
   return (
-    <div className="row no-gutters justify-content-center  ">
-      <div className="col-md-6 px-1 justify-content-center ">
-        <img src={image1} className="w-full image_height" alt="" />
+    <div className="row no-gutters justify-content-center w-full card_Wrapper_Col   ">
+      <div className="col-sm-6  justify-content-center mr-3">
+        <img src={image1} className="image_height " alt="" />
       </div>
-      <div className="col-md-6 px-1 justify-content-center">
-        <img src={image2} className="w-full image_height" alt="" />
+      <div className="col-sm-6  justify-content-center mr">
+        <img src={image2} className="image_height " alt="" />
       </div>
     </div>
   );

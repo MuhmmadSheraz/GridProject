@@ -6,16 +6,19 @@
   margin-top: 14px;
 }
 .nav-button {
-  padding: 12px 35px !important;
+  padding: 6px 24px !important;
   box-shadow: 4px 4px 0px #000000;
   border-radius: 10px;
   background-color: white;
   font-weight: bold;
+  font-size: 24px;
 }
 .nav_item {
   font-weight: bold;
-  font-size: 22px !important;
-  padding: 5px;
+  font-size: 18px !important;
+  margin-right: 20px !important;
+  /* padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important; */
 }
 .closeIcon {
   padding: 0.1rem 0.15rem;
