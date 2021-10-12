@@ -1,7 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: "JACKPORT";
   src: local("JACKPORT"), url("./Assets/Fonts/JACKPORT.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "JACKPORT_NCV";
+  src: local("JACKPORT_NCV"),
+    url("./Assets/Fonts/JACKPORT\ COLLEGE\ NCV.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "JACKPORT_NCV_REGULAR";
+  src: local("JACKPORT_NCV_REGULAR"),
+    url("./Assets/Fonts/JACKPORT\ REGULAR\ NCV.ttf") format("truetype");
   font-weight: normal;
 }
 body {

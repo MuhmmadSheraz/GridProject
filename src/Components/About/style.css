@@ -1,9 +1,19 @@
 .card_wrapper {
   flex-direction: row !important;
 }
-.font-bold {
-  font-weight: bold !important;
+.about-desc {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif !important;
+  color: black;
+  font-weight: 500 !important;
 }
+.about-desc-bottom {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif !important;
+  color: black;
+  font-weight: 900 !important;
+}
+
 @media screen and (max-width: 768px) {
   .card_wrapper {
     flex-direction: column !important;

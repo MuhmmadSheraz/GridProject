@@ -1,9 +1,9 @@
 import React from "react";
 import gif from "../../Assets/gif.gif";
-import logoMark from "../../Assets/Logomark-Blue 1.png";
+import logoMark from "../../Assets/xo.svg";
 
-import discord from "../../Assets/discord.png";
-import twitter from "../../Assets/twitter.png";
+import discord from "../../Assets/discord.svg";
+import twitter from "../../Assets/twitter.svg";
 
 import Fade from "react-reveal/Fade";
 import "./style.css";

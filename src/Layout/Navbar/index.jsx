@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../../Assets/logo.png";
-import logoMark from "../../Assets/Logomark-Blue 1.png";
-import discord from "../../Assets/discord.png";
-import twitter from "../../Assets/twitter.png";
+import logoMark from "../../Assets/xo.svg";
+import discord from "../../Assets/discord.svg";
+import twitter from "../../Assets/twitter.svg";
 import close from "../../Assets/close.png";
 import "./style.css";
 const Navbar = ({ showSidebar, setShowSidebar }) => {
@@ -43,9 +43,15 @@ const Navbar = ({ showSidebar, setShowSidebar }) => {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav ml-auto align-items-center">
-            <li className="list-unstyle px-2 nav_item">HOME</li>
-            <li className="list-unstyle px-2  nav_item ">ROADMAP</li>
-            <li className="list-unstyle px-2  nav_item">ABOUT</li>
+            <a href="#home" className="list-unstyle px-2 nav_item">
+              HOME
+            </a>
+            <a href="#roadmap" className="list-unstyle px-2  nav_item ">
+              ROADMAP
+            </a>
+            <a href="#about" className="list-unstyle px-2  nav_item">
+              ABOUT
+            </a>
             <li className="list-unstyle px-2 nav_item">
               <img src={logoMark} className="h-25" alt="icon" />
             </li>
