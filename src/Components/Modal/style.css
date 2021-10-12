@@ -1,0 +1,68 @@
+.modalWrapper {
+  height: 450px;
+  background-image: url("../../Assets/bg.png");
+  background-color: white;
+  width: 100%;
+  display: flex;
+
+  border-radius: 16px;
+}
+.closeModalButton {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.modalHeading {
+  width: 60%;
+  text-align: center;
+  font-size: 50px;
+}
+.modal_content {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 16px;
+}
+.rc-slider-mark-text {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1250px) {
+  .modalHeading {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modalHeading {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .modalHeading {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .modalWrapper {
+    height: 400px;
+  }
+  .modalHeading {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .modalHeading {
+    text-align: center;
+    font-size: 25px;
+  }
+}

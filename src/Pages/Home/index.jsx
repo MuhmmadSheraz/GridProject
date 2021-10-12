@@ -14,6 +14,8 @@ import Fade from "react-reveal/Fade";
 import "bootstrap/dist/js/bootstrap.js";
 import "./style.css";
 import About from "../../Components/About/index";
+import Modal from "../../Components/Modal/index";
+import { useState, useRef, useEffect } from "react";
 function Home() {
   const imageData = [
     {
@@ -47,11 +49,32 @@ function Home() {
       img: [Image3, Image4],
     },
   ];
+  const [showModal, setShowModal] = useState(false);
+  const ref = useRef(null);
+  const handleClickOutside = (event) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setShowModal(false);
+      document.body.style.overflow = "unset";
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
+
   return (
     <div className="container  sub_home_wrapper pb-3 d-flex justify-content-center align-items-center flex-column pt-5">
       <div className="row no-gutters justify-content-center  w-100">
         {/* Text */}
-        <div className="col-md-6 center padding-0 alignText">
+        <div className="col-md-6 center leftMain padding-0 alignText">
+          {showModal && (
+            <div className="modal_main " ref={ref}>
+              <Modal showModal={showModal} setShowModal={setShowModal} />
+            </div>
+          )}
           <h1 id="home" className="header_heading">
             WELCOME TO COLLEGE KIDS
           </h1>
@@ -60,7 +83,14 @@ function Home() {
             place where they can become anything they want
           </p>
           <div>
-            <button className="headerButton justify-content-center align-items-center mt-3 text-center">
+            <button
+              className="headerButton justify-content-center align-items-center mt-3 text-center"
+              onClick={() => {
+                setShowModal(true);
+                document.body.style.overflow = "hidden";
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
               MINT
             </button>
           </div>
@@ -150,6 +180,9 @@ function Home() {
           })}
         </div>
       </div>
+      {/* Modal */}
+
+      {showModal && <div className="overlay" />}
     </div>
   );
 }

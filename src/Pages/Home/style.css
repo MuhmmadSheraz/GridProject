@@ -1,6 +1,40 @@
 .main-wrapper {
   width: 100%;
   background-image: url("../../Assets/bg.png");
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.leftMain {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.modal_main {
+  position: absolute;
+  top: 7%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 5;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+
+  z-index: 1;
+  color: rgba(130, 130, 130, 0.5);
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden !important;
 }
 .list-unstyle {
   list-style-type: none;
@@ -89,6 +123,7 @@
 .leftSideRow_wrapper {
   padding-right: 12px !important;
 }
+
 @media screen and (max-width: 1199px) {
   .header_heading {
     font-size: 80px;
@@ -106,6 +141,9 @@
   .row-card-content {
     font-size: 18px;
   }
+  .modal_main {
+    width: 500px;
+  }
 }
 .headerButton {
   padding: 6px 24px !important;
@@ -116,6 +154,14 @@
   font-size: 24px;
 }
 @media screen and (max-width: 767px) {
+  .modal_main {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 5;
+  }
   .mb_0 {
     margin-bottom: 0px !important;
   }
@@ -139,5 +185,24 @@
 
   .row-card-content {
     font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .modal_main {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .modal_main {
+    top: 5%;
+  }
+  .modal_main {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .modal_main {
+    width: 300px;
   }
 }

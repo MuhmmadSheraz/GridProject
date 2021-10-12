@@ -30,7 +30,7 @@ const About = () => {
         <Fade left duration={1000} delay={1200}>
           <div style={{ marginRight: "24px" }} className="monoSpace">
             <Card
-              image={Image1}
+              image={Image6}
               title={"COLLEGE KID # 01"}
               name={"JOSH"}
               description={
@@ -39,7 +39,7 @@ const About = () => {
             />
           </div>
           <Card
-            image={Image6}
+            image={Image1}
             title={"COLLEGE KID # 02"}
             name={"PENN"}
             description={
