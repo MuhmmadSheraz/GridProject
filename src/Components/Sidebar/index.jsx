@@ -41,13 +41,13 @@ const index = ({ showSidebar, setShowSidebar, showModal, setShowModal }) => {
         </a>
         <div className="d-flex W-100 pt-3">
           <p className="list-unstyle mx-2">
-            <img src={logoMark} className="h-75" alt="icon" />
+            <img src={logoMark} className="h-75 hoverMe" alt="icon" />
           </p>
           <p className="list-unstyle mx-2">
-            <img src={discord} className="h-75" alt="icon" />
+            <img src={discord} className="h-75 hoverMe" alt="icon" />
           </p>
           <p className="list-unstyle mx-2">
-            <img src={twitter} className="h-75" alt="icon" />
+            <img src={twitter} className="h-75 hoverMe" alt="icon" />
           </p>
         </div>
 

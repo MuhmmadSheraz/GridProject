@@ -21,6 +21,7 @@ import capgirl from "../../Assets/capgirl.svg";
 import discord from "../../Assets/discord.svg";
 import twitter from "../../Assets/twitter.svg";
 import logoMark from "../../Assets/xo.svg";
+import last from "../../Assets/last.svg";
 import ImageCard from "../../Components/ImageCard/index";
 import Fade from "react-reveal/Fade";
 import "bootstrap/dist/js/bootstrap.js";
@@ -55,7 +56,7 @@ function Home({ showModal, setShowModal }) {
       img: [capgirl, Image16],
     },
     {
-      img: [browngown, Image6],
+      img: [browngown, last],
     },
     // {
     //   img: [Image2, Image7],
@@ -94,7 +95,7 @@ function Home({ showModal, setShowModal }) {
           </h1>
           <p className="pt-3 header_content">
             A collection of 10,000 CollegeKids transported into the Metaverse, a
-            place where they can become anything they want
+            place where they can become anything they want.
           </p>
           <div>
             <button
@@ -111,18 +112,18 @@ function Home({ showModal, setShowModal }) {
           <hr className="hr_custom alignText my-4" />
           <div className="alignText">
             <h3 className="mb-3">STAY UP TO DATE!</h3>
-            <img alt="icon" src={logoMark} className="upadteIcon" />
+            <img alt="icon" src={logoMark} className="upadteIcon hoverMe" />
             <img
               onClick={() => redirect("https://discord.gg/5pCcQS9Fpc")}
               alt="icon"
               src={discord}
-              className="upadteIcon mx-3"
+              className="upadteIcon mx-3 hoverMe"
             />
             <img
               alt="icon"
               onClick={() => redirect("https://twitter.com/CollegeKidsNFT")}
               src={twitter}
-              className="upadteIcon "
+              className="upadteIcon hoverMe"
             />
           </div>
           <hr className="hr_custom  alignText my-4" />
@@ -170,8 +171,8 @@ function Home({ showModal, setShowModal }) {
                 </div>
                 <div className="box-2  w-full">
                   <h4 className="row-card-content">
-                    Smart contracts will be deployed, allowing for staking and
-                    liquidity pools to yield $DiningDollars
+                    ERC-20 Smart contracts will be deployed, allowing for
+                    staking and liquidity pools to yield $DiningDollars
                   </h4>
                   <p className="date">November 2021</p>
                 </div>
@@ -181,10 +182,10 @@ function Home({ showModal, setShowModal }) {
                     coming soon
                   </p>
                   <div className=" flex-row justify-content-around pb-4 ">
-                    <img src={logo} alt="" />
-                    <img src={logo} alt="" className="mx-2" />
-                    <img src={logo} alt="" />
-                    <img src={logo} alt="" className="mx-2" />
+                    <img src={logo} alt="" className="logoSize  " />
+                    <img src={logo} alt="" className="mx-2 logoSize" />
+                    <img src={logo} alt="" className="logoSize  " />
+                    <img src={logo} alt="" className="mx-2 logoSize" />
                   </div>
                 </div>
               </div>{" "}

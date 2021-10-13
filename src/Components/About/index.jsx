@@ -34,7 +34,7 @@ const About = () => {
               title={"COLLEGE KID # 01"}
               name={"JOSH"}
               description={
-                '   "Currently playing poker in the Metaverse with laser eyes... life’s crazy.'
+                '   "Currently playing poker in the Metaverse with laser eyes... life’s crazy."'
               }
             />
           </div>
@@ -43,7 +43,7 @@ const About = () => {
             title={"COLLEGE KID # 02"}
             name={"PENN"}
             description={
-              "LOOK AT MY WATER GUN!!! PEW PEW PEW!!!HAHAHAHAHAHAHAHA!!!”"
+              "“LOOK AT MY WATER GUN!!! PEW PEW PEW!!!HAHAHAHAHAHAHAHA!!!”"
             }
           />
         </Fade>

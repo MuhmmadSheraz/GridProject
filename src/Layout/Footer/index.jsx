@@ -29,18 +29,18 @@ const index = ({ showModal, setShowModal }) => {
           MINT
         </button>
         <div className="d-flex align-items-center mt-4 ">
-          <img src={logoMark} alt="" className="mx-3" />
+          <img src={logoMark} alt="" className="mx-3 hoverMe" />
           <img
             onClick={() => redirect("https://discord.gg/5pCcQS9Fpc")}
             src={discord}
             alt=""
-            className="mx-3"
+            className="mx-3 hoverMe"
           />
           <img
             onClick={() => redirect("https://twitter.com/CollegeKidsNFT")}
             src={twitter}
             alt=""
-            className="mx-3"
+            className="mx-3 hoverMe"
           />
         </div>
       </div>

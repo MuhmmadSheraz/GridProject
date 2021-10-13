@@ -17,7 +17,7 @@ const Navbar = ({ showSidebar, setShowSidebar, showModal, setShowModal }) => {
         <div className="d-flex align-items-center">
           <img
             src={logo}
-            className="h-50 w-50 "
+            className="logoSize "
             style={{ marginRight: "5px" }}
             alt="logo"
           />
@@ -58,12 +58,12 @@ const Navbar = ({ showSidebar, setShowSidebar, showModal, setShowModal }) => {
               ABOUT
             </a>
             <li className="list-unstyle px-2 nav_item">
-              <img src={logoMark} className="h-25" alt="icon" />
+              <img src={logoMark} className="h-25 hoverMe" alt="icon" />
             </li>
             <li className="list-unstyle px-2 nav_item">
               <img
                 src={discord}
-                className="h-25"
+                className="h-25 hoverMe"
                 alt="icon"
                 onClick={() => redirect("https://discord.gg/5pCcQS9Fpc")}
               />
@@ -72,7 +72,7 @@ const Navbar = ({ showSidebar, setShowSidebar, showModal, setShowModal }) => {
               <img
                 onClick={() => redirect("https://twitter.com/CollegeKidsNFT")}
                 src={twitter}
-                className="h-25"
+                className="h-25 hoverMe"
                 alt="icon"
               />
             </li>

@@ -9,14 +9,20 @@
   border-top-width: 1px;
 }
 .footer_button {
-  padding: 12px 24px;
+  padding: 6px 24px !important;
   box-shadow: 4px 4px 0px #000000;
   border-radius: 10px;
+  border-color: black !important;
   background-color: white;
-  font-weight: bold;
-  border-color: black;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 4px !important;
 }
-
+.hoverMe:hover {
+  filter: invert(9%) sepia(51%) saturate(6709%) hue-rotate(344deg)
+    brightness(92%) contrast(81%);
+  cursor: pointer;
+}
 .linkBtn {
   text-decoration: none;
   color: white;

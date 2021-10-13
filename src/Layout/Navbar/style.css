@@ -14,13 +14,17 @@
   line-height: 34px;
   letter-spacing: 2%;
 }
+.logoSize {
+  height: 10ox;
+  width: 30px;
+}
 .nav-button {
   font-family: "JACKPORT_NCV_REGULAR";
   padding: 6px 24px !important;
   box-shadow: 4px 4px 0px #000000;
   border-radius: 10px;
   background-color: white;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: 4px !important;
   font-size: 24px;
   border-color: black;
