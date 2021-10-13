@@ -14,7 +14,10 @@ import Image13 from "../../Assets/img13.svg";
 import Image14 from "../../Assets/img14.svg";
 import Image15 from "../../Assets/img15.svg";
 import Image16 from "../../Assets/img16.svg";
-
+import yellowring from "../../Assets/yellowring.svg";
+import brownfire from "../../Assets/brownfire.svg";
+import browngown from "../../Assets/browngown.svg";
+import capgirl from "../../Assets/capgirl.svg";
 import discord from "../../Assets/discord.svg";
 import twitter from "../../Assets/twitter.svg";
 import logoMark from "../../Assets/xo.svg";
@@ -34,25 +37,25 @@ function Home({ showModal, setShowModal }) {
       img: [Image3, Image4],
     },
     {
-      img: [Image5, Image6],
+      img: [yellowring, Image6],
     },
     {
       img: [Image7, Image8],
     },
     {
-      img: [Image9, Image10],
+      img: [Image9, Image5],
     },
     {
-      img: [Image11, Image15],
+      img: [brownfire, Image15],
     },
     {
-      img: [Image13, Image14],
+      img: [Image11, Image14],
     },
     {
-      img: [Image15, Image16],
+      img: [capgirl, Image16],
     },
     {
-      img: [Image3, Image6],
+      img: [browngown, Image6],
     },
     // {
     //   img: [Image2, Image7],
