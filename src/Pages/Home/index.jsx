@@ -6,6 +6,15 @@ import Image4 from "../../Assets/img4.svg";
 import Image5 from "../../Assets/img5.svg";
 import Image6 from "../../Assets/img6.svg";
 import Image7 from "../../Assets/img7.svg";
+import Image8 from "../../Assets/img8.svg";
+import Image9 from "../../Assets/img9.svg";
+import Image10 from "../../Assets/img10.svg";
+import Image11 from "../../Assets/img11.svg";
+import Image13 from "../../Assets/img13.svg";
+import Image14 from "../../Assets/img14.svg";
+import Image15 from "../../Assets/img15.svg";
+import Image16 from "../../Assets/img16.svg";
+
 import discord from "../../Assets/discord.svg";
 import twitter from "../../Assets/twitter.svg";
 import logoMark from "../../Assets/xo.svg";
@@ -16,7 +25,7 @@ import "./style.css";
 import About from "../../Components/About/index";
 import Modal from "../../Components/Modal/index";
 import { useState, useRef, useEffect } from "react";
-function Home() {
+function Home({ showModal, setShowModal }) {
   const imageData = [
     {
       img: [Image1, Image2],
@@ -28,28 +37,27 @@ function Home() {
       img: [Image5, Image6],
     },
     {
-      img: [Image1, Image7],
+      img: [Image7, Image8],
     },
     {
-      img: [Image3, Image4],
+      img: [Image9, Image10],
     },
     {
-      img: [Image5, Image6],
+      img: [Image11, Image15],
     },
     {
-      img: [Image4, Image2],
+      img: [Image13, Image14],
     },
     {
-      img: [Image5, Image1],
+      img: [Image15, Image16],
     },
     {
-      img: [Image2, Image7],
+      img: [Image3, Image6],
     },
-    {
-      img: [Image3, Image4],
-    },
+    // {
+    //   img: [Image2, Image7],
+    // },
   ];
-  const [showModal, setShowModal] = useState(false);
   const ref = useRef(null);
   const handleClickOutside = (event) => {
     if (ref.current && !ref.current.contains(event.target)) {
@@ -64,6 +72,9 @@ function Home() {
       document.removeEventListener("click", handleClickOutside, true);
     };
   }, []);
+  function redirect(url) {
+    window.open(url, "_blank");
+  }
 
   return (
     <div className="container  sub_home_wrapper pb-3 d-flex justify-content-center align-items-center flex-column pt-5">
@@ -97,9 +108,23 @@ function Home() {
           <hr className="hr_custom alignText my-4" />
           <div className="alignText">
             <h3 className="mb-3">STAY UP TO DATE!</h3>
-            <img alt="icon" src={logoMark} className="upadteIcon mr-3" />
-            <img alt="icon" src={discord} className="upadteIcon mx-3" />
-            <img alt="icon" src={twitter} className="upadteIcon mx-3" />
+            <img
+              alt="icon"
+              src={logoMark}
+              className="upadteIcon textLineIcon"
+            />
+            <img
+              onClick={() => redirect("https://discord.gg/5pCcQS9Fpc")}
+              alt="icon"
+              src={discord}
+              className="upadteIcon mx-3"
+            />
+            <img
+              alt="icon"
+              onClick={() => redirect("https://twitter.com/CollegeKidsNFT")}
+              src={twitter}
+              className="upadteIcon "
+            />
           </div>
           <hr className="hr_custom  alignText my-4" />
           {/* Section 2 */}
@@ -173,7 +198,7 @@ function Home() {
         <div className="col-md-6 padding-0  text-center overflow-hidden">
           {imageData.map(({ img }, index) => {
             return (
-              <Fade key={index} right duration={500} delay={500}>
+              <Fade key={index} right duration={400} delay={400}>
                 <ImageCard image1={img[0]} image2={img[1]} />
               </Fade>
             );
@@ -181,7 +206,12 @@ function Home() {
         </div>
       </div>
       {/* Modal */}
-
+      <div className="textBar">
+        <img alt="icon" src={logoMark} className="upadteIcon textLineIcon" />
+        Launching on the first Layer 2 for NFTs on ETH, Immutable X. This means
+        0 GAS FEES wehn trading!!
+        <img alt="icon" src={logoMark} className="upadteIcon textLineIcon" />
+      </div>
       {showModal && <div className="overlay" />}
     </div>
   );

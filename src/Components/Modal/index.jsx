@@ -8,14 +8,16 @@ const index = ({ showModal, setShowModal }) => {
   return (
     <Fade>
       <div className="modalWrapper">
-        <img
-          src={cancel}
+        <div
           className="closeModalButton"
           onClick={() => {
             setShowModal(false);
             document.body.style.overflow = "unset";
           }}
-        />
+        >
+          <img src={cancel} className="cancelImage" />
+          <p className="mt-3 mx-2 closeBtn"> Close</p>
+        </div>
 
         <div className="modal_content">
           <h1 className="modalHeading">HOW MANY WOULD YOU LIKE TO MINT?</h1>

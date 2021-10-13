@@ -14,13 +14,15 @@
   border-radius: 10px;
   background-color: white;
   font-weight: bold;
+  border-color: black;
 }
+
 .linkBtn {
   text-decoration: none;
   color: white;
 }
 .linkBtn:hover {
-  color: #ffff8f !important;
+  color: #81212d !important;
 }
 .footerLine {
   width: 100%;
@@ -54,7 +56,7 @@
     height: 400px !important;
   }
   .footer_separator {
-    width: 500px !important;
+    width: 400px !important;
   }
 }
 @media screen and (max-width: 460px) {

@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card/index";
-import Image1 from "../../Assets/im1.svg";
-import Image6 from "../../Assets/img6.svg";
+import card1 from "../../Assets/card1.svg";
+import card2 from "../../Assets/card2.svg";
 import Fade from "react-reveal/Fade";
 import "./style.css";
 
@@ -30,7 +30,7 @@ const About = () => {
         <Fade left duration={1000} delay={1200}>
           <div style={{ marginRight: "24px" }} className="monoSpace">
             <Card
-              image={Image6}
+              image={card1}
               title={"COLLEGE KID # 01"}
               name={"JOSH"}
               description={
@@ -39,11 +39,11 @@ const About = () => {
             />
           </div>
           <Card
-            image={Image1}
+            image={card2}
             title={"COLLEGE KID # 02"}
             name={"PENN"}
             description={
-              '"YOOOOOO LOOK AT ME IM A FU**ING ALIEN HAHAHAHAHAHAHAH!”.'
+              "LOOK AT MY WATER GUN!!! PEW PEW PEW!!!HAHAHAHAHAHAHAHA!!!”"
             }
           />
         </Fade>

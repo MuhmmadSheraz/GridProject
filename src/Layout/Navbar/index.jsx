@@ -4,8 +4,13 @@ import logoMark from "../../Assets/xo.svg";
 import discord from "../../Assets/discord.svg";
 import twitter from "../../Assets/twitter.svg";
 import close from "../../Assets/close.png";
+import CollegeKids from "../../Assets/collogo.svg";
 import "./style.css";
-const Navbar = ({ showSidebar, setShowSidebar }) => {
+const Navbar = ({ showSidebar, setShowSidebar, showModal, setShowModal }) => {
+  function redirect(url) {
+    window.open(url, "_blank");
+  }
+
   return (
     <div className="container w-100 px-3 mt-2" style={{ paddingTop: "25px" }}>
       <nav className="navbar navbar-expand-lg justify-content-between navbar-light bg-transparent">
@@ -16,12 +21,12 @@ const Navbar = ({ showSidebar, setShowSidebar }) => {
             style={{ marginRight: "5px" }}
             alt="logo"
           />
-          <h3 className="logoText">CollegeKids</h3>
+          <img src={CollegeKids} alt="logo" className="colLogo" />
         </div>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler "
           type="button"
-          style={{ boxShadow: "none" }}
+          style={{ boxShadow: "none", zIndex: "90000000000000" }}
           aria-label="Toggle navigation"
           onClick={() => {
             setShowSidebar(!showSidebar);
@@ -56,14 +61,33 @@ const Navbar = ({ showSidebar, setShowSidebar }) => {
               <img src={logoMark} className="h-25" alt="icon" />
             </li>
             <li className="list-unstyle px-2 nav_item">
-              <img src={discord} className="h-25" alt="icon" />
+              <img
+                src={discord}
+                className="h-25"
+                alt="icon"
+                onClick={() => redirect("https://discord.gg/5pCcQS9Fpc")}
+              />
             </li>
             <li className="list-unstyle px-2 nav_item">
-              <img src={twitter} className="h-25" alt="icon" />
+              <img
+                onClick={() => redirect("https://twitter.com/CollegeKidsNFT")}
+                src={twitter}
+                className="h-25"
+                alt="icon"
+              />
             </li>
 
             <li className="list-unstyle px-2">
-              <button className="nav-button">MINT</button>
+              <button
+                className="nav-button"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  setShowModal(true);
+                  document.body.style.overflow = "hidden";
+                }}
+              >
+                MINT
+              </button>
             </li>
           </ul>
         </div>

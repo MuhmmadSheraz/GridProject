@@ -15,12 +15,15 @@
   letter-spacing: 2%;
 }
 .nav-button {
+  font-family: "JACKPORT_NCV_REGULAR";
   padding: 6px 24px !important;
   box-shadow: 4px 4px 0px #000000;
   border-radius: 10px;
   background-color: white;
   font-weight: bold;
+  letter-spacing: 4px !important;
   font-size: 24px;
+  border-color: black;
 }
 .nav_item {
   margin-right: 20px !important;
@@ -45,5 +48,14 @@
   }
 }
 a:hover {
-  color: #000000 !important;
+  color: #81212d !important;
+}
+button:hover {
+  background-color: #81212d;
+  color: white;
+}
+@media screen and (max-width: 380px) {
+  .navbar-toggler {
+    background-color: white !important;
+  }
 }

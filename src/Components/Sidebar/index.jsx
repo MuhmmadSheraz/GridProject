@@ -4,17 +4,17 @@ import logo from "../../Assets/logo.png";
 import discord from "../../Assets/xo.svg";
 import logoMark from "../../Assets/discord.svg";
 import twitter from "../../Assets/twitter.svg";
-
-const index = ({ showSidebar, setShowSidebar }) => {
+import CollegeKids from "../../Assets/collogo.svg";
+const index = ({ showSidebar, setShowSidebar, showModal, setShowModal }) => {
   const hideSidebar = () => {
     setShowSidebar(false);
   };
   return (
     <div className="sidebar_wrapper ">
       <div className="sidebar_logo_wrapper">
-        <div className="d-flex align-items-center">
+        <div className="d-flex align-items-center mt-3 space_X">
           <img src={logo} className="h-50 w-50 space_l" alt="logo" />
-          <h3 className="logoText ">CollegeKids</h3>
+          <img src={CollegeKids} alt="logo" className="colLogo" />
         </div>
       </div>
       <p>
@@ -52,7 +52,17 @@ const index = ({ showSidebar, setShowSidebar }) => {
         </div>
 
         <p className="list-unstyle px-2">
-          <button className="nav-button">MINT</button>
+          <button
+            className="nav-button"
+            onClick={() => {
+              hideSidebar();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              setShowModal(true);
+              document.body.style.overflow = "hidden";
+            }}
+          >
+            MINT
+          </button>
         </p>
       </p>
     </div>
