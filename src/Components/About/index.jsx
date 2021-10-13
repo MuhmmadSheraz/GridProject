@@ -16,7 +16,7 @@ const About = () => {
           10,000 CollegeKids receive a mysterious letter in the mail inviting
           them to a Blockchain Internship. They accept and meet the following
           day at an undisclosed location. Upon arrival, a mystifying force
-          begins to pull them f rom all directions at once. They are immediately
+          begins to pull them from all directions at once. They are immediately
           knocked out and can't recall anything else. They wake up in the
           Metaverse and are f ree to become whoever they want. Some college kids
           become rich by selling the objects they create. Others become famous

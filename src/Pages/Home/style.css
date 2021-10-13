@@ -46,7 +46,7 @@
   width: 100% !important;
 }
 .textBar {
-  top: 50%;
+  bottom: 0%;
   z-index: 5000000;
   width: 100%;
   background-color: white;
@@ -177,6 +177,7 @@
   padding: 6px 24px !important;
   box-shadow: 4px 4px 0px #000000;
   border-radius: 10px;
+  border-color: black !important;
   background-color: white;
   font-weight: bold;
   font-size: 24px;

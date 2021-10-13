@@ -14,7 +14,7 @@ const index = ({ showModal, setShowModal }) => {
 
   return (
     <Fade top duration={1000} delay={1200}>
-      <div className="d-flex justify-content-center align-items-center mt-5 flex-column pb-2">
+      <div className=" pb-5 d-flex justify-content-center align-items-center mt-5 flex-column pb-2">
         <hr className="footer_separator mb-3  " />
         <img src={gif} className="footerImage mt-4 " alt="cartoonImage" />
         <h1 className="mt-4">START MINTING NOW</h1>
