@@ -111,11 +111,7 @@ function Home({ showModal, setShowModal }) {
           <hr className="hr_custom alignText my-4" />
           <div className="alignText">
             <h3 className="mb-3">STAY UP TO DATE!</h3>
-            <img
-              alt="icon"
-              src={logoMark}
-              className="upadteIcon textLineIcon"
-            />
+            <img alt="icon" src={logoMark} className="upadteIcon" />
             <img
               onClick={() => redirect("https://discord.gg/5pCcQS9Fpc")}
               alt="icon"
@@ -179,14 +175,16 @@ function Home({ showModal, setShowModal }) {
                   </h4>
                   <p className="date">November 2021</p>
                 </div>
-                <div className="box-2 p-3 px-3 w-full row-card-content small_font text-center">
-                  <p className="small_font">
-                    More collegekids Announcement coming soon
+                <div className="box-2  w-full  small_font text-center">
+                  <p className="small_font row-card-content text-center">
+                    More collegekids Announcement <br />
+                    coming soon
                   </p>
-                  <div className=" flex-row justify-content-around ">
+                  <div className=" flex-row justify-content-around pb-4 ">
                     <img src={logo} alt="" />
+                    <img src={logo} alt="" className="mx-2" />
                     <img src={logo} alt="" />
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="" className="mx-2" />
                   </div>
                 </div>
               </div>{" "}

@@ -16,7 +16,7 @@
   left: 100%;
   transform: translate(-50%, -50%);
   width: 800px;
-  z-index: 9999999999999999999999999999999999999;
+  z-index: 9999999;
 }
 .overlay {
   position: absolute;
@@ -145,12 +145,20 @@
 }
 
 @media screen and (max-width: 1199px) {
+  /* .textBar{
+    font
+  } */
   .header_heading {
     font-size: 80px;
     color: black;
   }
   .row-card-content {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .textBar {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -180,7 +188,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: 5;
   }
   .mb_0 {
     margin-bottom: 0px !important;
@@ -211,6 +218,11 @@
 @media screen and (max-width: 650px) {
   .modal_main {
     width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .textBar {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 450px) {
